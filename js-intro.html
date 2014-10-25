@@ -1,0 +1,92 @@
+<html>
+  <head>
+    <title>JavaScript + jQuery Intro</title>
+    <style>
+      * {
+        box-sizing: border-box
+          -webkit-box-sizing: border-box;
+          -moz-box-sizing: border-box;
+      }
+      
+      .box {
+        width: 100%;
+        max-width: 800px; 
+        margin: 0 auto;
+      }
+    
+      .grey-background {
+        background: grey
+      }
+      
+      .blue-border {
+        border: 2px solid blue
+      }
+      
+      .action {
+        cursor: pointer;
+      }
+      
+    </style>
+  </head>
+  <body>
+    
+    <div id="box" class="box">
+     Hello, I'm a box, in case you didn't know.
+    </div>
+    
+    <button class="action">Do Something</button>
+    
+    <div class="action">Do the same thing</div>
+  
+    <!--<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>-->
+
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script>
+
+    //adds a blue border on a single click of the button
+    //$(".action").on('click', function() { 
+    //  $("#box").addClass("blue-border");
+    //});
+
+    //removes the border on a double click of the button
+    //$(".action").on('dblclick', function() { 
+    //  $("#box").removeClass("blue-border");
+    //});
+
+    //hides the box on a single click of the button
+    //$(".action").on('click', function() { 
+    //  $("#box").hide();
+    //});
+
+    //hides the box on a single click of the button with a slide up motion
+    //$(".action").on('click', function() { 
+    //  $("#box").slideUp();
+    //});
+    //
+
+    //hides the box on a single click of the button with a fade out
+    $(".action").on('click', function() { 
+      $("#box").fadeOut();
+    });
+
+    //shows the box on a double click of the button
+    $(".action").on('dblclick', function() { 
+      $("#box").show();
+    });
+
+      // Add your JavaScript code here
+      // JavaScript
+      var name = 'Bob';
+      var ageByYear = 32;
+      var ageByMonths = ageByYear * 12;
+      var ageByWeeks = ageByYear * 52;
+
+      // A popup 
+      alert("My Name Is " + name + " and I am " + ageByMonths + " months old, which is " + ageByYear + " years, or " + ageByWeeks + " weeks.");
+      
+  
+      
+    </script>
+
+  </body>
+</html>
